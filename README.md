@@ -4,7 +4,8 @@ Resolución de los ejercicios 6,7 y 8
 Características Principales Y Usos De Patrones Mas Conocidos
 
 1. Patrones Creacionales: 
--	Patrón Singleton:
+
+1.1	Patrón Singleton:
 
 Este patrón permite que una clase tenga una única instancia
 
@@ -13,7 +14,7 @@ Este patrón permite que una clase tenga una única instancia
 *	Sirve para compartir la conexión a una BD
 *	Puede evitar la instancia de una app múltiple veces 
 
--	Patrón Builder
+1.2	Patrón Builder
 
 El patrón Builder nos permite construir objetos complejos paso a paso y además producir diferentes tipos y representaciones de un objeto con el mismo código de construcción
 
@@ -22,7 +23,8 @@ El patrón Builder nos permite construir objetos complejos paso a paso y además
 *	Construcción de objetos complejos de manera flexible y extensible
 *	Una app de customización de carros donde un carro pueda tener diferentes combinaciones de características como el color, tipo de motor, carrocería etc.
  
--	Patrón Prototype
+1.3	Patrón Prototype
+
 Prototype tiene como objetivo clonar una clase, es decir, clonarse a si misma y heredar todos los métodos, propiedades y su estado.
 *	Clonar objetos heredando sus propiedades
 *	Evitar código repetido de inicialización
@@ -30,7 +32,7 @@ Prototype tiene como objetivo clonar una clase, es decir, clonarse a si misma y 
 *	Creación de objetos con una configuración predeterminada
 *	Puede servir por ejemplo cuando se está trabajando con una base de datos con mucha información y queremos crear una BD en base a la que ya se tenia sin afectar a la anterior
 
--	Patron Factory
+1.4	Patron Factory
 
 Este patrón permite crear una jerarquía de clases y utilizar una u otra de manera trasparente 
 
@@ -38,7 +40,8 @@ Este patrón permite crear una jerarquía de clases y utilizar una u otra de man
 *	Un uso podría ser un sistema de creación de objetos empleados en donde cada empleado puede tener atributos diferentes y configurarlos de manera independiente podría ser costoso, para ello podríamos hacer uso de este patrón para crear un sistema de fabricación de empleados en donde los configure correctamente. 
 
 2. Patrones Estructurales:
--	Patrón Adapter 
+
+2.1	Patrón Adapter 
 
 Este patrón permite la colaboración entre objetos con interfaces incompatibles 
 
@@ -46,14 +49,14 @@ Este patrón permite la colaboración entre objetos con interfaces incompatibles
 *	Cuando tenemos código viejo y queremos actualizarlo sin tener que afectarlo en sí.
 *	Un ejemplo claro de uso de este patrón es cuando queremos usar una librería de terceros, pero su interfaz no es compatible con nuestra aplicación, en este caso se hace un Adapter para hacerla compatible
 
--	Patrón Facade 
+2.2	Patrón Facade 
 
 Proporciona una interfaz simple a algo complejo que hay por detrás
 
 *	Aislar el código complejo
 *	Algunos ejemplos de este patrón pueden ser para un sistema de búsqueda que, a partir de una interfaz sencilla para el usuario, que se le oculte la complejidad del proceso de búsqueda definida, o tambien para un sistema de atención al cliente. 
 
--	Patrón Decorator
+2.3	Patrón Decorator
 
 Permite añadir funcionalidad a una clase o objeto sin modificar la clase/objeto
 
@@ -64,13 +67,13 @@ Permite añadir funcionalidad a una clase o objeto sin modificar la clase/objeto
 
 3. Patrones Comportamiento: 
 
--	Patrón Iterator
+3.1	Patrón Iterator
 
 Permite recorrer elementos de una colección sin exponer como estan almacenados internamente en esa clase
 
 *	Un uso de este patrón sería un gestor de proyectos, donde se pueda recorrer las tareas asignadas a un miembro del equipo y a su vez mostrar una vista de las tareas generales del equipo.
 
--	Patrón Observer
+3.2	Patrón Observer
 
 Este patrón te permite definir un mecanismo de suscripción para notificar a varios objetos sobre cualquier evento que le suceda al objeto que están observando.
 
@@ -78,14 +81,14 @@ Este patrón te permite definir un mecanismo de suscripción para notificar a va
 *	Su uso es muy amplio
 *	Es utilizado en aplicaciones que permitan hacer notificaciones a sus usuarios, seguimiento de envíos o en aplicativos meteorológicos    
 
--	Patrón Mediator
+3.3	Patrón Mediator
 
 El patrón mediator actúa como un intermediario entre dos o más objetos, es decir dos objetos no se comunicarán directamente entre sí, si no a través de un mediador únicamente
 
 *	Comunicar unos objetos con otros y el objeto que emite no recibe.
 *	Se usa mucho en interfaces de usuario, aplicativos de comunicación o videoconferencia 
 
--	Patrón State
+3.4	Patrón State
 
 Permite a un objeto alterar su comportamiento cuando su estado interno cambia.
 
@@ -93,7 +96,7 @@ Permite a un objeto alterar su comportamiento cuando su estado interno cambia.
 *	Hasta que no hagas una cosa no puedes hacer la otra
 *	Algunos usos de este patrón podrían ser en maquina expendedoras o una aplicación de reproducción de música. 
 
--	Patrón Strategy
+3.5	Patrón Strategy
 
 Crear un envoltorio sobre varias funciones de forma que un mismo código se pueda usar de manera diferentes.
 
